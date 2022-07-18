@@ -683,16 +683,19 @@ export default class PriorAuth extends Component {
   }
 
   renderResponseItems(claimResponse) {
+    console.log("Let the fun being ... ")
     const children = [];
     claimResponse.item.forEach((item) => {
+      console.log("Here are we are in the loop ... ")
       const claimItem = this.getClaimItem(item.itemSequence);
+      console.log("ClaimItem retrieved!")
       const requestedItemCoding = "DummyCode"
       console.log("Retrieving claimItem.productOrService... " + claimItem.productOrService)
       if (claimItem.productOrService !== undefined &&  claimItem.productOrService !== null ){
         const requestedItemCoding = claimItem.productOrService.coding[0];
         console.log("Coding claimItem.productOrService... " + requestedItemCoding)
       }
-
+      console.log("Still hanging!")
       const requestedItemText = requestedItemCoding.display
         ? requestedItemCoding.display
         : `${requestedItemCoding.system}:${requestedItemCoding.code}`;
