@@ -21,7 +21,7 @@ export default class PriorAuth extends Component {
       subscribeMsg: "",
       showRestHookForm: false,
       showLink: false,
-      priorAuthBase: "https://davinci-prior-auth.logicahealth.org/fhir",
+      priorAuthBase: process.env.REACT_APP_PA_BASE_URL ? process.env.REACT_APP_PA_BASE_URL + "/fhir": "https://davinci-prior-auth.logicahealth.org/fhir",
       isSubmitted: false,
       priorAuthId: null,
       patientId: null,
