@@ -489,7 +489,7 @@ export default class PriorAuth extends Component {
       kid: "3ab8b05b64d799e289e10a201786b38c"
     };
     const headerStr = JSON.stringify(header);
-
+    console.log("aud:" + this.state.tokenUrl);
     const fiveMinutes = 350;
     const payload = {
       iss: PASConfig.clientId,
