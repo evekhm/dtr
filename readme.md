@@ -15,7 +15,7 @@ Install [node.js](https://nodejs.org/en/).
 
 ## Installation
 
-1. Clone the repository `git clone https://github.com/HL7-DaVinci/dtr.git`
+1. Clone the repository `git clone https://github.com/evekhm/dtr.git`
 2. In a terminal, navigate to the directory the project was cloned into
 3. Run `npm install`
 4. To Run:
